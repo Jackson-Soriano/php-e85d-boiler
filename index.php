@@ -19,7 +19,22 @@
             <h1 class="display-7 p-3 mb-1 text-center text-bg-dark">PHP Basics</h1>
         </div>
         <div class="row text-bg-success">
-           
+           <!-- form -->
+           <form action="index.php" method="post">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" placeholder="Name" class="form-control" value="<?= $name?>">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="text" name="email" id="email" placeholder="Email" class="form-control" value="<?= $email?>">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea name="message" id="message" class="form-control" rows="5"><?=$message?></textarea>
+                </div>
+                <input type="submit" name="submit" id="submit" class="btn btn-primary btn-lg mt-1" value="Send Message">
+            </form>
         </div>
     </div>
 </body>
